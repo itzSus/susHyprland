@@ -2,6 +2,7 @@
 ```bash
 git clone https://github.com/itzSus/susHyprland.git
 cd susHyprland
+chmod +x install.sh
 ./install.sh
 ```
 
