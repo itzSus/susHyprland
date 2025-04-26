@@ -1,7 +1,8 @@
 #INSTALLATION
 ```bash
 git clone https://github.com/itzSus/susHyprland.git
-mv susHyprland/* ~/
+cd susHyprland
+./install.sh
 ```
 
 Its my first hyprland rice ever. Kinda mediocre but meh works good enough. atleast for me!
