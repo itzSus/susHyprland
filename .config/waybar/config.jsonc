@@ -1,0 +1,29 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": "0 0 0 0",
+  "fixed-center": true,
+  "reload_style_on_change": true,
+  "height": 36,
+  "include": ["~/.config/waybar/modules.jsonc"],
+  "modules-left": [
+    "custom/arch",
+    "mpris"
+  ],
+  
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "group/stats",
+    "pulseaudio#output",
+    "battery",
+    "network",
+    "clock",
+    "custom/swaync"
+      ]
+
+
+
+}

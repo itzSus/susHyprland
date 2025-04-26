@@ -1,0 +1,164 @@
+/* -------------------- IMPORT -------------------- */
+/* @import "../../.cache/wal/colors-waybar.css"; */
+@import "matugen/matugen-waybar.css";
+
+/* -------------------- GLOBAL -------------------- */
+* { 
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "JetBrainsMono NFM", "FiraCode Nerd Font", "monospace","Material Symbol Outlined";
+  font-size: 7.9px;
+}
+
+window#waybar {
+  background: none;
+}
+
+/* -------------------- LEFT/MID/RIGHT -------------------- */
+.modules-left{
+  color: @on_tertiary_container;
+  background: @surface;
+  margin: 0px 5px 0px 0px;
+  padding: 0px 20px 0px 5px;
+  border-radius: 0px 0px 40px 0px;
+  font-size: 20px;
+}
+
+.modules-right{
+  font-size:9px;
+  color: @on_tertiary_container;
+  background: @surface;
+  margin: 0px 0px 0px 5px;
+  padding: 0px 5px 0px 20px;
+  border-radius: 0px 0px 0px 40px;
+}
+
+
+/* -------------------- CUSTOM/ARCH -------------------- */
+#custom-arch{
+  font-size: 22px;
+  margin: 0px 15px 0px 0px;
+}
+
+/* -------------------- Player -------------------- */
+#mpris{
+  padding: 0px 3px;
+  margin:0px 2px;
+  font-size: 10px;
+}
+
+/* -------------------- WORKSPACES -------------------- */
+#workspaces {
+  background: @surface;
+  margin: 0px 5px;
+  padding: 5px 5px;
+  border-radius: 16px;
+  color: @on_surface;
+}
+#workspaces button {
+  font-weight: bold;
+  padding: 0px 5px;
+  margin: 0px 3px;
+  border-radius: 16px;
+  color: transparent;
+  background: @surface_container_highest;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+  font-weight: bold;
+  background-color: @primary;
+  color: @scrim;
+  border-radius: 16px;
+  min-width: 50px;
+  background-size: 400% 400%;
+  transition: all 0.3s ease-in-out;
+}
+#workspaces button:hover {
+  font-weight: bold;
+  background-color: @tertiary;
+  color: @scrim;
+  border-radius: 16px;
+  min-width: 50px;
+  background-size: 400% 400%;
+}
+
+#workspaces button.urgent {
+  font-weight: bold;
+  background-color: @error;
+  color: @scrim;
+  border-radius: 16px;
+  min-width: 50px;
+  background-size: 400% 400%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* -------------------- BLUETOOTH -------------------- */
+#custom-bluetooth {
+  padding: 0px 1px;
+  margin:0px 2px;
+  color: #7aa2f7;
+  font-size: 20px;
+}
+
+/* -------------------- VOLUME -------------------- */
+#pulseaudio{
+  padding: 0px 3px;
+  margin:0px 2px;
+}
+
+/* -------------------- STATS -------------------- */
+#group-stats {
+  background: #1a1b26;
+  color: #c0caf5;
+  font-weight: bold;
+}
+
+#backlight, #cpu, #temperature, #custom-settings-icon, #memory, #clock, #battery {
+  padding: 0px 3px;
+  margin:0px 2px;
+}
+
+#temperature.critical {
+  color: #f7768e;
+}
+
+
+
+/* -------------------- BATTERY -------------------- */
+#battery {
+  font-size: 10px;
+  color: #f4f8f2;
+  padding: 0px 1px;
+}
+
+#battery.plugged {
+  color: #89dceb;
+}
+
+#battery.good {
+  color: #a6e3a1;
+}
+
+#battery.warning {
+  color: #f9e2af;
+}
+
+#battery.critical {
+  color: #f38ba8;
+}
+
+/* -------------------- NETWORK -------------------- */
+#network{
+  font-size: 12px;
+  padding: 0px 3px;
+  margin:0px 2px;
+}
+
+
+/* -------------------- CLOCK -------------------- */
+#clock{
+  font-size: 10px;
+  margin: 0px 0px 0px 3px;
+}
