@@ -18,7 +18,9 @@ fi
 
 echo -e "${GREEN}Installing dependencies...${NC}"
 
-sudo pacman -S --needed hyprland waybar hyprlock hypridle fuzzel kitty fish foot playerctl brightnessctl swaync spotify pavucontrol pulseaudio pipewire
+sudo pacman -S --needed hyprland waybar hyprlock hypridle fuzzel kitty fish foot playerctl brightnessctl swaync spotify ly pavucontrol pulseaudio pipewire
+systemctl enable ly
+systemctl start ly
 
 echo -e "${GREEN}Copying configs...${NC}"
 
@@ -27,5 +29,6 @@ cp -r .config/* ~/.config/
 
 mkdir -p ~/.config/assets
 cp -r assets/* ~/.config/assets/
+
 
 echo -e "${GREEN}✅ Installation complete! Please reboot or restart Hyprland!${NC}"
