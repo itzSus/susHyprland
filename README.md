@@ -20,6 +20,9 @@ Its my first hyprland rice ever. Kinda mediocre but meh works good enough. atlea
 
 ![image](https://github.com/user-attachments/assets/16540595-40ef-446c-9031-21009af034f3)
 
+#WLOGOUT
+
+![image](https://github.com/user-attachments/assets/db4d2368-f646-499f-979d-a2c0ade12164)
 
 
 Looks good to me
